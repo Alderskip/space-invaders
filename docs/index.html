@@ -1,1 +1,72 @@
-<!DOCTYPE html><html><head><title>Space Invaders</title><meta charset="UTF-8"><style>*{margin:0;padding:0}body,html{width:100%;height:100%;background:#000}canvas{widht:600px;display:block;background:#000;margin:0 auto}</style></head><body> <canvas width="100%" height="100%" id="cnvs"></canvas> <script src="src.ed48ea98.js"></script> </body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Space Invaders</title>
+    <meta charset="UTF-8">
+    <style>* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  background: #000;
+  border: 5px solid #fff;
+  width: 600px;
+  height: 900px;
+  margin: 0 auto;
+  display: block;
+}
+
+#rage-mode {
+  color: red;
+  z-index: 10;
+  font-family: Lucida Console, Courier New, monospace;
+  font-size: 48px;
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.next-level-button {
+  cursor: pointer;
+  background-color: #8efa00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 36px;
+  position: absolute;
+  left: 25%;
+}
+
+.next-level-button:hover {
+  background-color: #76c800;
+}
+
+</style>
+  </head>
+
+  <body>
+    <div id="rage-mode">RAGE MODE</div>
+    <canvas width="100%" height="100%" id="cnvs"></canvas>
+    <div id="game-interface" style="color: #fff; text-align: center; width: 300px; height: 300px; padding: 10px; font: 32px MinecraftRusNEW; position: absolute; top: 0; right: 0">
+      <h2>Level: <span id="level-display">1</span></h2>
+      <h2>Score: <span id="score-display">0</span></h2>
+      <h2>Next Bonus Life: <span id="next-life-display">1000</span></h2>
+      <button id="next-level-button" class="next-level-button" style="display: none">
+        Next Level
+      </button>
+      <button id="restart-level-button" class="next-level-button" style="display: none">
+        Restart
+      </button>
+    </div>
+
+    <script src="index.975ef6c8.js" defer=""></script>
+  </body>
+</html>
